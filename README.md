@@ -76,4 +76,16 @@ ORDER BY
 LIMIT
     5;
 ```
-![Top 5 najbardziej pożądanych umiejętności](/top_skills.png)
+Na podstawie analizy danych, najbardziej poszukiwanymi umiejętnościami okazały się **Python** i **SQL**, z liczbą ofert przekraczającą **40 000** dla każdej z tych technologii.
+
+Kluczowe technologie w zestawieniu to:
+
+- **Python** – 40 524 oferty  
+- **SQL** – 40 254 oferty  
+- **AWS** – 18 264 oferty  
+- **Azure** – 13 913 ofert  
+- **Spark** – 13 066 ofert  
+
+![Top 5 najpopularniejszych umiejętności w IT](/top_skills.png)
+
+W czołówce znalazły się również umiejętności związane z chmurą obliczeniową (**AWS**, **Azure**) oraz przetwarzaniem dużych zbiorów danych (**Spark**), które stanowią obecnie podstawę wielu projektów IT.
