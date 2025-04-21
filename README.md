@@ -158,7 +158,10 @@ Analiza ujawniła zaskakujących liderów wśród technologii z najwyższymi śr
 
 ## Jakich umiejętności warto się uczyć?
 
-Następne zapytanie pozwala 
+Przeanalizowałem umiejętności spełniające kryteria:
+- Wymagane w >100 ofertach pracy zdalnej
+- Ze znanym wynagrodzeniem
+- Posortowane według średniego wynagrodzenia i popularności
 
 ```sql
 SELECT 
@@ -181,10 +184,44 @@ ORDER BY
     demand_count DESC
 LIMIT 25;
 ```
+ TOP 5 najbardziej opłacalnych umiejętności
+- NumPy ($154,132) - 131 ofert 🧮
+- TensorFlow ($153,485) - 209 ofert 🤖
+- Kubernetes ($153,035) - 137 ofert 🚢
+- PyTorch ($152,627) - 189 ofert �
+- Scala ($149,645) - 257 ofert ☕
 
-#	Technologia	Średnia Pensja	Liczba Ofert	Kategoria
-1	NumPy	$154,132	131	Data Science
-2	TensorFlow	$153,485	209	AI/ML
-3	Kubernetes	$153,035	137	DevOps
-...	...	...	...	...
-25	Azure	$135,283	581	Chmura obliczeniowa
+| #  | Technologia   | Średnia Pensja | Liczba Ofert | Kategoria           |
+|----|--------------|---------------:|-------------:|---------------------|
+| 1  | NumPy        | $154,132       | 131          | Data Science        |
+| 2  | TensorFlow   | $153,485       | 209          | AI/ML               |
+| 3  | Kubernetes   | $153,035       | 137          | DevOps              |
+| 4  | PyTorch      | $152,627       | 189          | AI/ML               |
+| 5  | Scala        | $149,645       | 257          | Programming         |
+| 6  | Kafka        | $149,317       | 225          | Big Data            |
+| 7  | scikit-learn | $148,661       | 128          | Machine Learning    |
+| 8  | pandas       | $148,435       | 216          | Data Analysis       |
+| 9  | Spark        | $146,068       | 582          | Big Data            |
+| 10 | Airflow      | $145,042       | 279          | Data Engineering    |
+| 11 | GCP          | $143,315       | 239          | Cloud               |
+| 12 | PySpark      | $142,531       | 159          | Big Data            |
+| 13 | Java         | $141,666       | 324          | Programming         |
+| 14 | AWS          | $141,274       | 893          | Cloud               |
+| 15 | BigQuery     | $140,417       | 155          | Data Warehousing    |
+| 16 | Hadoop       | $139,814       | 281          | Big Data            |
+| 17 | Snowflake    | $139,747       | 476          | Data Warehousing    |
+| 18 | Go           | $139,481       | 215          | Programming         |
+| 19 | Redshift     | $138,061       | 282          | Data Warehousing    |
+| 20 | Python       | $137,911       | 2,183        | Programming         |
+| 21 | Looker       | $137,634       | 222          | Business Intelligence |
+| 22 | NoSQL        | $137,069       | 193          | Databases           |
+| 23 | Databricks   | $136,696       | 299          | Data Platform       |
+| 24 | Docker       | $135,851       | 157          | DevOps              |
+| 25 | Azure        | $135,283       | 581          | Cloud               |
+
+💡 Kluczowe wnioski:
+- AI/ML i Data Science dominują w topce (NumPy, TensorFlow, PyTorch)
+- Narzędzia chmurowe (AWS, Azure, GCP) są zarówno popularne, jak i dobrze płatne
+- Big Data (Spark, Hadoop, Kafka) to pewna inwestycja
+- Python jest najpopularniejszy (2183 oferty), choć nie najwyżej płatny
+
