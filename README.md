@@ -229,7 +229,7 @@ LIMIT 25;
 
 Podczas tej analizy znacząco rozwinąłem swoje umiejętności SQL:
 
-🧩 **Zaawansowane Zapytania:** Opanowałem tworzenie złożonych kwerend, łączenie tabel z precyzją oraz wykorzystanie klauzuli WITH do tymczasowych przekształceń danych.
-📊 **Analiza Grupująca:** Mistrzowsko opanowałem GROUP BY oraz funkcje agregujące jak COUNT() i AVG(), przekształcając surowe dane w wartościowe podsumowania.
-💡 **Analityczna Precyzja:** Rozwinąłem umiejętność tłumaczenia rzeczywistych problemów biznesowych na efektywne zapytania SQL dostarczające konkretnych wniosków.
+- 🧩 **Zaawansowane Zapytania:** Opanowałem tworzenie złożonych kwerend, łączenie tabel z precyzją oraz wykorzystanie klauzuli WITH do tymczasowych przekształceń danych.
+- 📊 **Analiza Grupująca:** Mistrzowsko opanowałem GROUP BY oraz funkcje agregujące jak COUNT() i AVG(), przekształcając surowe dane w wartościowe podsumowania.
+- 💡 **Analityczna Precyzja:** Rozwinąłem umiejętność tłumaczenia rzeczywistych problemów biznesowych na efektywne zapytania SQL dostarczające konkretnych wniosków.
 
