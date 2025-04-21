@@ -76,3 +76,4 @@ ORDER BY
 LIMIT
     5;
 ```
+![Top 5 najbardziej pożądanych umiejętności](/top_skills.png)
