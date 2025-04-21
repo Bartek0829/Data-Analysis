@@ -155,3 +155,36 @@ Analiza ujawniła zaskakujących liderów wśród technologii z najwyższymi śr
 - **AI/ML i analiza danych** dominują w top 25
 - **Języki systemowe** (Rust, Go, C) wciąż wysoko w rankingach
 - **Specjalistyczne bazy danych** to pewna inwestycja w karierę
+
+## Jakich umiejętności warto się uczyć?
+
+Następne zapytanie pozwala 
+
+```sql
+SELECT 
+    skills_dim.skill_id,
+    skills_dim.skills,
+    COUNT(skills_job_dim.job_id) AS demand_count,
+    ROUND(AVG(job_postings_fact.salary_year_avg), 0) AS avg_salary
+FROM job_postings_fact
+INNER JOIN skills_job_dim ON job_postings_fact.job_id = skills_job_dim.job_id
+INNER JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
+WHERE
+    salary_year_avg IS NOT NULL
+    AND job_work_from_home = True 
+GROUP BY
+    skills_dim.skill_id
+HAVING
+    COUNT(skills_job_dim.job_id) > 100
+ORDER BY
+    avg_salary DESC,
+    demand_count DESC
+LIMIT 25;
+```
+
+#	Technologia	Średnia Pensja	Liczba Ofert	Kategoria
+1	NumPy	$154,132	131	Data Science
+2	TensorFlow	$153,485	209	AI/ML
+3	Kubernetes	$153,035	137	DevOps
+...	...	...	...	...
+25	Azure	$135,283	581	Chmura obliczeniowa
