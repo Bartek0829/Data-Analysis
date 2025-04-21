@@ -48,10 +48,31 @@ Tuż za nią uplasowały się specjalistyczne stanowiska związane z analizą da
 - **Staff Data Scientist/Quant Researcher** – 550 000 USD (Selby Jennings)  
 - **Staff Data Scientist – Business Analytics** – 525 000 USD (Selby Jennings)  
 - **Senior Data Scientist** – do 475 000 USD
-- 
+
 ![Top 10 najlepiej płatnych zawodów w IT](/top_jobs.png)
 
 W zestawieniu pojawiają się również stanowiska kierownicze, jak **Head of Data Science**, **Director of Analytics** czy **Principal Machine Learning Engineer**, które również oferują bardzo konkurencyjne wynagrodzenia.
 
 👀 **Wniosek**: Rynek IT premiuje nie tylko doświadczenie techniczne, ale także zdolność do zarządzania danymi i zespołami.
 
+## 📊 Jakie umiejętności są najbardziej pożądane?
+
+Aby stworzyć ranking najbardziej pożądanych umiejętności, połączyłem dwie powiązane tabele 🔗. Dzięki temu mogłem sprawdzić, które umiejętności są najczęściej wymagane w ofertach pracy zdalnej 🧑‍💻.
+
+```sql
+SELECT
+    skills,
+    COUNT(job_postings_fact.job_id) AS number_of_jobs
+FROM
+    job_postings_fact
+INNER JOIN skills_job_dim ON job_postings_fact.job_id = skills_job_dim.job_id
+INNER JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
+WHERE
+    job_work_from_home = TRUE
+GROUP BY
+    skills
+ORDER BY
+    number_of_jobs DESC
+LIMIT
+    5;
+```
