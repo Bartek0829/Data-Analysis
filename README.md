@@ -40,3 +40,18 @@ LIMIT
     10
 ;
 ```
+
+Na podstawie danych, najwyżej opłacanym stanowiskiem okazała się rola **Data Analyst w firmie Mantys**, oferująca średnie roczne wynagrodzenie w wysokości **650 000 USD**.  
+
+Tuż za nią uplasowały się specjalistyczne stanowiska związane z analizą danych i data science, takie jak:
+
+- **Staff Data Scientist/Quant Researcher** – 550 000 USD (Selby Jennings)  
+- **Staff Data Scientist – Business Analytics** – 525 000 USD (Selby Jennings)  
+- **Senior Data Scientist** – do 475 000 USD
+- 
+![Top 10 najlepiej płatnych zawodów w IT](/top_jobs.png)
+
+W zestawieniu pojawiają się również stanowiska kierownicze, jak **Head of Data Science**, **Director of Analytics** czy **Principal Machine Learning Engineer**, które również oferują bardzo konkurencyjne wynagrodzenia.
+
+👀 **Wniosek**: Rynek IT premiuje nie tylko doświadczenie techniczne, ale także zdolność do zarządzania danymi i zespołami.
+
